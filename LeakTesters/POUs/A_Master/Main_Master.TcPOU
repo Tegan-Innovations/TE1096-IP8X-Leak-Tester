@@ -56,7 +56,7 @@ PRG_HMI();
 PRG_Puls();
 ACT_FirstScan();
 PRG_TerminBoxInfo();
-
+//PRG_TerminBoxInfo();
 //gfggf
 
 
