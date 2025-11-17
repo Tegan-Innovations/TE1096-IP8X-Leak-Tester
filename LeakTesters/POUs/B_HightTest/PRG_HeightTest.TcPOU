@@ -263,7 +263,7 @@ ELSIF GVL_HMI_GLOBAL.bResetHeightFailParts THEN
 END_IF
 
 
-//SENSOR 1
+//Distance 1
 
 IF rtrigCaseTriger[6].Q THEN
 GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[1]:= GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[1] +1;
@@ -280,7 +280,7 @@ ELSIF GVL_HMI_GLOBAL.aResetHeightSensorBadParts[1] THEN
 	GVL_PERSIST.stPartsInspection.nHeightDistancePartsFailed[1]:=0;
 END_IF
 
-//SENSOR 2
+//Distance 2
 
 IF rtrigCaseTriger[8].Q THEN
 GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[2]:= GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[2] +1;
@@ -297,7 +297,7 @@ ELSIF GVL_HMI_GLOBAL.aResetHeightSensorBadParts[2] THEN
 	GVL_PERSIST.stPartsInspection.nHeightDistancePartsFailed[2]:=0;
 END_IF
 
-//SENSOR 3
+//Distance 3
 
 IF rtrigCaseTriger[10].Q THEN
 GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[3]:= GVL_PERSIST.stPartsInspection.nHeightDistancePartsGood[3] +1;

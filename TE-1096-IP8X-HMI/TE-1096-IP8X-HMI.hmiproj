@@ -29,7 +29,7 @@
     <HmiViewportUserScaleable>Default</HmiViewportUserScaleable>
     <HmiPostProcessing>True</HmiPostProcessing>
     <Name>TE-1096-IP8X-HMI</Name>
-    <HmiCommunicationRouterPort>10126</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10127</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.42</HmiInitial>
     <HmiRecent>1.12.762.46</HmiRecent>

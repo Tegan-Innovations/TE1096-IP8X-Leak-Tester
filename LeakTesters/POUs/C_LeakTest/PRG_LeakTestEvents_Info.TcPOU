@@ -67,17 +67,6 @@ ACT_LastResultSet();
         <ST><![CDATA[
 fLeakTesterActive(CLK := GVL_IO.dw_B07_i28General_I_O.bTestActiveLiveData, Q => bLeakTesterActive);
 
-
-IF bLeakTesterActive THEN
-	
-GVL_PERSIST.ast_i28LasResult[GVL_PERSIST.nLeakTestID] := GVL_IO.dw_B07_i28LastResult;
-GVL_PERSIST.ast_i28LasResult[GVL_PERSIST.nLeakTestID].sTime := GVL_HMI_GLOBAL.sSystemTime;
-GVL_PERSIST.ast_i28LasResult[GVL_PERSIST.nLeakTestID].sDate := GVL_HMI_GLOBAL.sSystemDate;
-GVL_PERSIST.nLeakTestID := GVL_PERSIST.nLeakTestID+1;
-bLeakTesterActive 		:= FALSE;
-
-END_IF
-
 IF bLeakTesterActive THEN
 	
 	FOR i :=200 TO 1 BY (-1) DO
@@ -706,16 +695,6 @@ asLeakTesterTestType[25] := "Transducer Test";
     <LineIds Name="PRG_LeakTestEvents_Info.ACT_LastResultSet">
       <LineId Id="3" Count="0" />
       <LineId Id="2" Count="0" />
-      <LineId Id="16" Count="0" />
-      <LineId Id="5" Count="0" />
-      <LineId Id="4" Count="0" />
-      <LineId Id="6" Count="0" />
-      <LineId Id="9" Count="0" />
-      <LineId Id="18" Count="1" />
-      <LineId Id="10" Count="0" />
-      <LineId Id="17" Count="0" />
-      <LineId Id="8" Count="0" />
-      <LineId Id="7" Count="0" />
       <LineId Id="29" Count="6" />
       <LineId Id="40" Count="1" />
       <LineId Id="38" Count="1" />
