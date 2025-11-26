@@ -27,6 +27,9 @@
     <Compile Include="DUTs\HeightMeasureFunction\E_HeighttMeasureProcess.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\HeightMeasureFunction\ST_Heightlimit.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\IO\i28\st_i28General_I_O.TcDUT">
       <SubType>Code</SubType>
     </Compile>

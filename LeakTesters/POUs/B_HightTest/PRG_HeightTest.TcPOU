@@ -34,6 +34,7 @@ VAR_IN_OUT
 END_VAR
 VAR PERSISTENT
 stHeightMeasurement2						: ST_HeightMeasurement2;
+stHeightlimit								: ST_Heightlimit;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[ACT_IOLink();
@@ -227,14 +228,14 @@ GVL_MASTER.stNest.nTarget							:= stHeightMeasurement2.anDistanceSetPoint;
     </Action>
     <Action Name="ACT_ProbesPosition" Id="{1d38391f-9002-4178-b9c3-0fe508376fc1}">
       <Implementation>
-        <ST><![CDATA[IF ((stHeightMeasurement2.aScaledSensorCurrentValue[1]>4)  AND 
-	(stHeightMeasurement2.aScaledSensorCurrentValue[1]<8)) AND	
-   ((stHeightMeasurement2.aScaledSensorCurrentValue[2]>4)  AND 
-	(stHeightMeasurement2.aScaledSensorCurrentValue[2]<8)) AND
-   ((stHeightMeasurement2.aScaledSensorCurrentValue[3]>4)  AND 
-	(stHeightMeasurement2.aScaledSensorCurrentValue[3]<8)) AND
-   ((stHeightMeasurement2.aScaledSensorCurrentValue[4]>4)  AND 
-	(stHeightMeasurement2.aScaledSensorCurrentValue[4]<8)) THEN
+        <ST><![CDATA[IF ((stHeightMeasurement2.aScaledSensorCurrentValue[1]> stHeightlimit.LOW)  AND 
+	(stHeightMeasurement2.aScaledSensorCurrentValue[1]<stHeightlimit.HIGH)) AND	
+   ((stHeightMeasurement2.aScaledSensorCurrentValue[2]>stHeightlimit.LOW)  AND 
+	(stHeightMeasurement2.aScaledSensorCurrentValue[2]<stHeightlimit.HIGH)) AND
+   ((stHeightMeasurement2.aScaledSensorCurrentValue[3]>stHeightlimit.LOW)  AND 
+	(stHeightMeasurement2.aScaledSensorCurrentValue[3]<stHeightlimit.HIGH)) AND
+   ((stHeightMeasurement2.aScaledSensorCurrentValue[4]>stHeightlimit.LOW)  AND 
+	(stHeightMeasurement2.aScaledSensorCurrentValue[4]<stHeightlimit.HIGH)) THEN
 
 		GVL_HMI_GLOBAL.bProbesPositionOk				:= TRUE;
 ELSE 	GVL_HMI_GLOBAL.bProbesPositionOk				:= FALSE;		
@@ -331,7 +332,7 @@ tonCaseDelay[10](IN:= ,PT:=T#250MS);
 rtrigCaseTriger[1](clk:= );
 rtrigCaseTriger[2](clk:= );
 rtrigCaseTriger[3](clk:= (stStationStruct.nState=1240) AND GVL_MASTER.stNest.bHeightPass );//
-rtrigCaseTriger[4](clk:= (stStationStruct.nState=1240) AND NOT GVL_MASTER.stNest.bHeightReject );//
+rtrigCaseTriger[4](clk:= (stStationStruct.nState=1240) AND GVL_MASTER.stNest.bHeightReject );//
 rtrigCaseTriger[5](clk:= stStationStruct.bStationAbort);
 rtrigCaseTriger[6](clk:= (stStationStruct.nState=1240) AND GVL_HMI_GLOBAL.aGeneralPassHeightTest[1]);
 rtrigCaseTriger[7](clk:= (stStationStruct.nState=1240) AND GVL_HMI_GLOBAL.aGeneralFailHeightTest[1]);
