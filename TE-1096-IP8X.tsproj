@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.60" TcVersionFixed="true">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.62" TcVersionFixed="true">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{29CAAFD0-28B6-D9D0-3B0E-64B337839191}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..5] OF BOOL</Name>
@@ -745,8 +745,8 @@
 			<Licenses CacheOrCheckLicensesOnStartup="true">
 				<Target BkhfOrder="01577313">
 					<ManualSelect>{796D380F-D49E-4C0C-A05F-500052FAC883}</ManualSelect>
-					<TargetSelect TargetId="2">{796D380F-D49E-4C0C-A05F-500052FAC883}</TargetSelect>
 					<TargetSelect TargetId="2">{66689887-CCBD-452C-AC9A-039D997C6E66}</TargetSelect>
+					<TargetSelect TargetId="2">{796D380F-D49E-4C0C-A05F-500052FAC883}</TargetSelect>
 					<LicenseDevice DongleHardwareId="2" DongleDevice="#x0302000a" DongleLevel="50" DongleSystemId="{2B1F76B3-6848-E09F-8B5E-18C1A46A7D21}" DongleSerialNumber="000bt62p"/>
 				</Target>
 			</Licenses>
@@ -19152,7 +19152,7 @@
 			</Device>
 			<Device Id="2" DevType="119" AmsPort="28674" AmsNetId="172.18.233.187.3.1" RemoteName="Device 2 (EL6631)">
 				<Name>Device 2 (EL6631)</Name>
-				<DevData>000000000d00000000000000a08601005465726d2031332028454c3636333129000000000000000000000000000000000000000000000000000000000000000000000000000002006507a8c000ffffff000105a21c72040000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
+				<DevData>000000000d00000000000000a08601005465726d2031332028454c3636333129000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
 				<Image Id="3" AddrType="4" ImageType="3" SizeIn="102" SizeOut="220">
 					<Name>Image</Name>
 				</Image>
