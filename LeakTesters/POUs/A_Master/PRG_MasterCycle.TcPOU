@@ -44,9 +44,9 @@ END_VAR]]></Declaration>
 
 ACT_LinkIO();
 ACT_TimTrig();
-stStationStruct.bStationInProgress := stStationStruct.nState>=1100 AND stStationStruct.nState<=1600;
+stStationStruct.bStationInProgress := stStationStruct.nState>=1100 AND stStationStruct.nState<=1700;
 
-IF stStationStruct.nState <700 OR (stStationStruct.nState > 1600 AND stStationStruct.nState <4000) OR stStationStruct.nState > 4000 THEN
+IF stStationStruct.nState <700 OR (stStationStruct.nState > 1700 AND stStationStruct.nState <4000) OR stStationStruct.nState > 4000 THEN
 	GVL_HMI_GLOBAL.sActualProcessLeak := ""; 
 	GVL_HMI_GLOBAL.sActualProcessHeight := ""; 
 	GVL_MASTER.stNest.bPiecePass 	:= FALSE;

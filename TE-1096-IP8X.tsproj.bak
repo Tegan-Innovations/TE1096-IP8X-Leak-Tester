@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.60" TcVersionFixed="true">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.62" TcVersionFixed="true">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{29CAAFD0-28B6-D9D0-3B0E-64B337839191}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..5] OF BOOL</Name>
@@ -758,7 +758,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{82C0BC2F-B8AE-4B65-B12E-3410285B5DB1}" Name="LeakTesters" PrjFilePath="LeakTesters\LeakTesters.plcproj" TmcFilePath="LeakTesters\LeakTesters.tmc" ReloadTmc="true" AmsPort="851" TargetArchiveSettings="#x002f" FileArchiveSettings="#x001f" CopyTmcToTarget="true" CopyTpyToTarget="false" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="LeakTesters\LeakTesters.tmc" TmcHash="{0707C44D-372C-30C6-4608-D9B338C2B77B}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="LeakTesters\LeakTesters.tmc" TmcHash="{7A29DE91-2477-3361-FDD3-1A1F60F3E476}">
 					<Name>LeakTesters Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">

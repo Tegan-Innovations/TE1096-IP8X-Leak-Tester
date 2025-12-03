@@ -205,7 +205,7 @@ fbHeightMeasurement2(
 	aMaxLimitCalibrationBlock					=> stHeightMeasurement2.aMaxLimitCalibrationBlock,
 	aDistanceBetweenProbes						=> stHeightMeasurement2.aDistanceBetweenProbes,
 	abSensorStuck								=> stHeightMeasurement2.abSensorStuck,
-	nFixedPoint									=> stHeightMeasurement2.nFixedPoint,
+	nFixedPoint								=> stHeightMeasurement2.nFixedPoint,
 	aScaledSensorCurrentValue					=> stHeightMeasurement2.aScaledSensorCurrentValue,
 	nHeightMeasureStateValue					=> GVL_HMI_GLOBAL.nHeightMeasureStateValue);
 

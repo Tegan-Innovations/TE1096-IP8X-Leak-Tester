@@ -267,12 +267,22 @@ IF (anValueBeforeMeasurement[4] <= (aSensorCurrentValue[4] + 0.5)) AND (anValueB
       <Implementation>
         <ST><![CDATA[IF bSetFixedPoints THEN
 	
-	nFixedPoint[1]						:= aScaledSensorCurrentValue[1];
-	nFixedPoint[2]						:= aScaledSensorCurrentValue[2];
-	nFixedPoint[3]						:= aScaledSensorCurrentValue[3];
-	nFixedPoint[4]						:= aScaledSensorCurrentValue[4];
+	nSensorSetPoint[1]						:= aScaledSensorCurrentValue[1];
+	nSensorSetPoint[2]						:= aScaledSensorCurrentValue[2];
+	nSensorSetPoint[3]						:= aScaledSensorCurrentValue[3];
+	nSensorSetPoint[4]						:= aScaledSensorCurrentValue[4];
+	
+	
+ELSE
+	
+	nFixedPoint[1]							:= nSensorSetPoint[1];
+	nFixedPoint[2]							:= nSensorSetPoint[2];
+	nFixedPoint[3]							:= nSensorSetPoint[3];
+	nFixedPoint[4]							:= nSensorSetPoint[4];
 
-END_IF]]></ST>
+END_IF
+
+ ]]></ST>
       </Implementation>
     </Action>
     <LineIds Name="FB_HeightMeasurement2">
@@ -395,9 +405,16 @@ END_IF]]></ST>
     </LineIds>
     <LineIds Name="FB_HeightMeasurement2.ACT_SetPoints">
       <LineId Id="1" Count="1" />
-      <LineId Id="5" Count="3" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="19" Count="2" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="11" Count="2" />
+      <LineId Id="16" Count="2" />
+      <LineId Id="14" Count="0" />
       <LineId Id="4" Count="0" />
       <LineId Id="3" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
