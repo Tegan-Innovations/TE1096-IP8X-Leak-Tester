@@ -220,6 +220,9 @@ GVL_HMI_GLOBAL.nHeightTestCycTime := (TIME_TO_DINT(GVL_MASTER.stAlarms[1].aEvent
 GVL_MASTER.stNest.nDistance							:= stHeightMeasurement2.aDistanceBetweenProbes;
 GVL_MASTER.stNest.nTarget							:= stHeightMeasurement2.anDistanceSetPoint;
 
+GVL_IO.dw_T03_EL2809.qRedIndicatorHeightTest		:= bRedIndicatorHeightTest;
+GVL_IO.dw_T03_EL2809.qGreenIndicatorHeightTest		:= bGreenIndicatorHeightTest;
+
 
 
 
@@ -455,6 +458,9 @@ rtrigCaseTriger[13](clk:= );
       <LineId Id="43" Count="0" />
       <LineId Id="38" Count="0" />
       <LineId Id="229" Count="0" />
+      <LineId Id="231" Count="0" />
+      <LineId Id="230" Count="0" />
+      <LineId Id="232" Count="0" />
       <LineId Id="228" Count="0" />
       <LineId Id="14" Count="0" />
       <LineId Id="20" Count="1" />
