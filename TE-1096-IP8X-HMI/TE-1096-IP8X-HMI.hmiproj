@@ -32,7 +32,7 @@
     <HmiCommunicationRouterPort>10127</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.42</HmiInitial>
-    <HmiRecent>1.12.762.46</HmiRecent>
+    <HmiRecent>1.12.762.56</HmiRecent>
     <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
